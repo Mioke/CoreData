@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'CoreDataStack_Example' do
+  pod 'CoreDataStack', :path => '../'
+
+  target 'CoreDataStack_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

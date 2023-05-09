@@ -1,0 +1,16 @@
+PODS:
+  - CoreDataStack (0.1.0)
+
+DEPENDENCIES:
+  - CoreDataStack (from `../`)
+
+EXTERNAL SOURCES:
+  CoreDataStack:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CoreDataStack: faa25ae6f33953950f782a9ebaeef6399b653fa0
+
+PODFILE CHECKSUM: 2e8436f874fc27dae33a9073e27f4bb90ad2f44a
+
+COCOAPODS: 1.11.3
