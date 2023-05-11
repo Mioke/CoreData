@@ -1,16 +1,29 @@
 PODS:
-  - CoreDataStack (0.1.0)
+  - CoreDataStack (0.1.0):
+    - CoreDataStack/Core (= 0.1.0)
+  - CoreDataStack/Core (0.1.0)
+  - CoreDataStack/Reactive (0.1.0):
+    - CoreDataStack/Core
+    - ReactiveSwift
+  - ReactiveSwift (7.1.1)
 
 DEPENDENCIES:
   - CoreDataStack (from `../`)
+  - CoreDataStack/Reactive (from `../`)
+  - ReactiveSwift
+
+SPEC REPOS:
+  trunk:
+    - ReactiveSwift
 
 EXTERNAL SOURCES:
   CoreDataStack:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CoreDataStack: faa25ae6f33953950f782a9ebaeef6399b653fa0
+  CoreDataStack: 8ace44cc47da47fbe2433a7aee5ad41a792b64ac
+  ReactiveSwift: 477d3f5bc2eb3cbbba1c1636505752b83bef93b1
 
-PODFILE CHECKSUM: 2e8436f874fc27dae33a9073e27f4bb90ad2f44a
+PODFILE CHECKSUM: e3f2dd625ec611c623df13977ca7fb41fc53d5d2
 
 COCOAPODS: 1.11.3

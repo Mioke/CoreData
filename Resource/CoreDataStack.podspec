@@ -29,8 +29,18 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '13.0'
+  
+  s.default_subspecs = 'Core'
 
-  s.source_files = 'CoreDataStack/Classes/**/*'
+  s.subspec 'Core' do |ss|
+    ss.source_files = 'CoreDataStack/Classes/**/*'
+  end
+  
+  s.subspec 'Reactive' do |ss|
+    ss.source_files = 'CoreDataStack/Reactive/**/*'
+    ss.dependency 'CoreDataStack/Core'
+    ss.dependency 'ReactiveSwift'
+  end
   
   # s.resource_bundles = {
   #   'CoreDataStack' => ['CoreDataStack/Assets/*.png']
@@ -38,5 +48,4 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

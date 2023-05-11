@@ -36,7 +36,7 @@ class CoreDataUtil {
                                                  params: CoreDataStack.Params,
                                                  delegate: CoreDataDelegate) -> NSPersistentStoreCoordinator {
         if let storeURL = params.storeURL {
-//            Logger.info("Store URL: \(storeURL.path)")
+            print("Store URL: \(storeURL.path)")
         }
         
         delegate.coreDataWillOpenDatabaseConnection()

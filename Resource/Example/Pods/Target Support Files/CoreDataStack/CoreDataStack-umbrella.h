@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "ObjCRuntimeAliases.h"
 
 FOUNDATION_EXPORT double CoreDataStackVersionNumber;
 FOUNDATION_EXPORT const unsigned char CoreDataStackVersionString[];

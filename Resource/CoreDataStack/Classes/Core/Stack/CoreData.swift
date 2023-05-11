@@ -85,7 +85,7 @@ public class CoreData: NSObject {
                 guard let name = entity.name else { continue }
                 let request = NSFetchRequest<NSFetchRequestResult>(entityName: name)
                 let count = try context.count(for: request)
-//                Logger.info("\(modelName) - \(name) - (\(count))")
+                print("\(modelName) - \(name) - (\(count))")
             }
         }, reportOn: queue, completion: completion)
     }
@@ -146,7 +146,7 @@ extension CoreData {
                     }
                     
 //                    Logger.error("Invalid access of NSManagedObject outside the dedicated queue")
-                    throw CoreDataError(code: .invalidAccess)
+                    throw CoreDataError.invalidAccess
                 }
                 
             } catch {
@@ -157,7 +157,7 @@ extension CoreData {
         }
         
         if let error = maybeError { throw error }
-        guard let value = maybeValue else { throw CoreDataError(code: .unexpectedNil) }
+        guard let value = maybeValue else { throw CoreDataError.unexpectedNil }
         return value
     }
 }

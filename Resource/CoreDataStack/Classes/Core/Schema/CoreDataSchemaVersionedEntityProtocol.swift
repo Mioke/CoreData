@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol CoreDataSchemaVersionedEntityProtocol: class {
+public protocol CoreDataSchemaVersionedEntityProtocol: AnyObject {
     associatedtype Version: Comparable
     associatedtype SchemaVersion: Comparable
     

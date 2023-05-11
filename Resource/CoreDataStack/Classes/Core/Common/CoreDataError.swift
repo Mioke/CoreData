@@ -7,16 +7,11 @@
 
 import Foundation
 
-extension CoreDataError {
-    public enum Code {
-        case deallocated
-        case invalidAccess
-        case unexpectedNil
-        case migrationRequired
-    }
+public enum CoreDataError: Swift.Error {
+    case deallocated
+    case invalidAccess
+    case unexpectedNil
+    case migrationRequired
+    case weakError
 }
 
-public struct CoreDataError: Swift.Error {
-    public let code: Code
-    // Implicit internal initializer
-}

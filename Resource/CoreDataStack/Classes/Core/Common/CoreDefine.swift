@@ -8,3 +8,7 @@
 import Foundation
 
 public typealias EmptyBlock = () -> Void
+
+public enum NoValue {
+    case none
+}

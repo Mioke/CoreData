@@ -4,6 +4,9 @@ platform :ios, '13.0'
 
 target 'CoreDataStack_Example' do
   pod 'CoreDataStack', :path => '../'
+  pod 'CoreDataStack/Reactive', :path => '../'
+  
+  pod 'ReactiveSwift'
 
   target 'CoreDataStack_Tests' do
     inherit! :search_paths
