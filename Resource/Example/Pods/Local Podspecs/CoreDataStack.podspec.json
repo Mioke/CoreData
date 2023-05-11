@@ -1,0 +1,40 @@
+{
+  "name": "CoreDataStack",
+  "version": "0.1.0",
+  "summary": "A short description of CoreDataStack.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mioke/CoreDataStack",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "KelanJiang": "kelan.jiang@seamoney.com"
+  },
+  "source": {
+    "git": "https://github.com/mioke/CoreDataStack.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "CoreDataStack/Classes/**/*"
+    },
+    {
+      "name": "Reactive",
+      "source_files": "CoreDataStack/Reactive/**/*",
+      "dependencies": {
+        "CoreDataStack/Core": [
+
+        ],
+        "ReactiveSwift": [
+
+        ]
+      }
+    }
+  ]
+}
