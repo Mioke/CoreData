@@ -45,7 +45,8 @@
 		7539C6975DD8D218FABCA04A /* Pods_CoreDataStack_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataStack_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC33135E5629D1B2E1E2D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		95B0A71EDF85A7124C72828A /* Pods-CoreDataStack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataStack_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataStack_Tests/Pods-CoreDataStack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9AA56B6FF911F9AD55A60A04 /* CoreDataStack.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoreDataStack.podspec; path = ../CoreDataStack.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AA56B6FF911F9AD55A60A04 /* CoreData.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoreData.podspec; path = ../CoreData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB476E9E2A0CA42F001D37CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 		AB4C97C22A0A217400B58B98 /* Store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Store.xcdatamodel; sourceTree = "<group>"; };
 		CEDC6249FCE181097FEA7D4F /* Pods-CoreDataStack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataStack_Example.release.xcconfig"; path = "Target Support Files/Pods-CoreDataStack_Example/Pods-CoreDataStack_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FAB680F3F75BE2EB262E7623 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -130,6 +131,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB476E9E2A0CA42F001D37CD /* README.md */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -155,7 +157,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				9AA56B6FF911F9AD55A60A04 /* CoreDataStack.podspec */,
+				9AA56B6FF911F9AD55A60A04 /* CoreData.podspec */,
 				FAB680F3F75BE2EB262E7623 /* README.md */,
 				8EC33135E5629D1B2E1E2D05 /* LICENSE */,
 			);

@@ -1,9 +1,9 @@
 # CoreDataStack
 
-[![CI Status](https://img.shields.io/travis/KelanJiang/CoreDataStack.svg?style=flat)](https://travis-ci.org/KelanJiang/CoreDataStack)
-[![Version](https://img.shields.io/cocoapods/v/CoreDataStack.svg?style=flat)](https://cocoapods.org/pods/CoreDataStack)
-[![License](https://img.shields.io/cocoapods/l/CoreDataStack.svg?style=flat)](https://cocoapods.org/pods/CoreDataStack)
-[![Platform](https://img.shields.io/cocoapods/p/CoreDataStack.svg?style=flat)](https://cocoapods.org/pods/CoreDataStack)
+[![CI Status](https://img.shields.io/travis/KelanJiang/CoreData.svg?style=flat)](https://travis-ci.org/KelanJiang/CoreData)
+[![Version](https://img.shields.io/cocoapods/v/CoreData.svg?style=flat)](https://cocoapods.org/pods/CoreData)
+[![License](https://img.shields.io/cocoapods/l/CoreData.svg?style=flat)](https://cocoapods.org/pods/CoreData)
+[![Platform](https://img.shields.io/cocoapods/p/CoreData.svg?style=flat)](https://cocoapods.org/pods/CoreData)
 
 ## Example
 
@@ -17,7 +17,7 @@ CoreDataStack is available through [CocoaPods](https://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'CoreDataStack'
+pod 'CoreData'
 ```
 
 ## Author
