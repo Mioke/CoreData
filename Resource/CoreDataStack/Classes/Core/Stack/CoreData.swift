@@ -139,16 +139,7 @@ extension CoreData {
         context.performAndWait {
             do {
                 maybeValue = try block(context)
-                
-                if maybeValue is NSManagedObject || (maybeValue is [NSManagedObject] && (maybeValue as? [NSManagedObject])?.isEmpty == false) {
-                    if shouldAssert {
-                        assertionFailure()
-                    }
-                    
-//                    Logger.error("Invalid access of NSManagedObject outside the dedicated queue")
-                    throw CoreDataError.invalidAccess
-                }
-                
+                try resultValueCheck(with: maybeValue)
             } catch {
                 if context.hasChanges { context.rollback() }
 //                Logger.error("\(error)")
@@ -159,5 +150,15 @@ extension CoreData {
         if let error = maybeError { throw error }
         guard let value = maybeValue else { throw CoreDataError.unexpectedNil }
         return value
+    }
+    
+    func resultValueCheck<T>(with maybeValue: T?) throws {
+        if maybeValue is NSManagedObject || (maybeValue is [NSManagedObject] && (maybeValue as? [NSManagedObject])?.isEmpty == false) {
+            if shouldAssert {
+                assertionFailure()
+            }
+            //                    Logger.error("Invalid access of NSManagedObject outside the dedicated queue")
+            throw CoreDataError.invalidAccess
+        }
     }
 }

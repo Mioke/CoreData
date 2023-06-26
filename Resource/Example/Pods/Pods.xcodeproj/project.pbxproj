@@ -66,6 +66,7 @@
 		A9731B4A897FE47A13CFB3A379B0761D /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02E34D4CFE4BC0F3BFA5FCA5E1826C0 /* Atomic.swift */; };
 		A9A836A3B2779F9A6A209DEE6F99735F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6EFA188EC53DBE9A073F84A980EBC8 /* Filter.swift */; };
 		AAD6EA9E5A6821C032278CDFA4BF5EAC /* Deprecations+Removals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83327319357E25355EF36FBA889D8DB9 /* Deprecations+Removals.swift */; };
+		AB33B4D62A14E65E00B23F45 /* CoreData+Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB33B4D52A14E65E00B23F45 /* CoreData+Concurrency.swift */; };
 		ACF37F801E05117175C028E316798024 /* ReactiveSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6202CB14E3CF345F8A2C9823ED66BFB3 /* ReactiveSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF24752DFD5040997ADF382710603C92 /* DematerializeResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505900919FFF9C31666F33133957C55 /* DematerializeResults.swift */; };
 		B09EBF48EFA17726A35A9BBF173AED91 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385D98E43E720186D960E46DD4781204 /* Bag.swift */; };
@@ -210,6 +211,7 @@
 		A37E0CF420754CE480A46A44A9208FC4 /* EventLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventLogger.swift; path = Sources/EventLogger.swift; sourceTree = "<group>"; };
 		A493D08B518C3F48FE90095E14E0E549 /* Pods-CoreDataStack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreDataStack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A999AE4C392CD2368566594ED712398E /* Flatten.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flatten.swift; path = Sources/Flatten.swift; sourceTree = "<group>"; };
+		AB33B4D52A14E65E00B23F45 /* CoreData+Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+Concurrency.swift"; sourceTree = "<group>"; };
 		AE76BC3E4C92B7437C787511748802BB /* Throttle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Throttle.swift; path = Sources/Observers/Throttle.swift; sourceTree = "<group>"; };
 		B048568452E3C59F69401EB701ABD194 /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delay.swift; path = Sources/Observers/Delay.swift; sourceTree = "<group>"; };
 		B175B3425EB62C41F6DDFE6FAE351CF5 /* Pods-CoreDataStack_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreDataStack_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -547,6 +549,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		AB33B4D42A14E62800B23F45 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				AB33B4D52A14E65E00B23F45 /* CoreData+Concurrency.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		B3354F7D79CDA33E2C60AA6FAC004DBD /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -581,6 +591,7 @@
 		DE273F1B8277B7F635C8C369ACC22F2A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AB33B4D42A14E62800B23F45 /* Concurrency */,
 				02830FB96C6B8BDA167D690EC4884326 /* Common */,
 				36E8E5AD73A429C06F8B0D0A96C6BC93 /* Notifier */,
 				2300759435922A7015AFB06F11E0A12B /* Query */,
@@ -834,6 +845,7 @@
 				EDF3E07087D58EFD77A5C9EACC7A2A41 /* ChangesType.swift in Sources */,
 				63A0EE82337ADE92C6F4B466E2EBA953 /* CoreData.swift in Sources */,
 				8A42A83FCDED56C2F4725BA2F5E49EA0 /* CoreData+Reactive.swift in Sources */,
+				AB33B4D62A14E65E00B23F45 /* CoreData+Concurrency.swift in Sources */,
 				A77FEABE232F54AEE3CA24B4F36CFC18 /* CoreDataConfig.swift in Sources */,
 				2915D27FA7F2E7A88366A079E40C4B49 /* CoreDataDelegate.swift in Sources */,
 				B606BD64291B7306FDD3C1231B28A901 /* CoreDataEntityProtocol.swift in Sources */,

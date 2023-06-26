@@ -14,7 +14,9 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		AB4965392A15F8D100C8C760 /* ReactiveSwift+Cuncurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4965382A15F8D100C8C760 /* ReactiveSwift+Cuncurrency.swift */; };
 		AB4C97C32A0A217400B58B98 /* Store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB4C97C12A0A217400B58B98 /* Store.xcdatamodeld */; };
+		ABD6CD7F2A1F4AD800443666 /* sticker.webp in Resources */ = {isa = PBXBuildFile; fileRef = ABD6CD7E2A1F495E00443666 /* sticker.webp */; };
 		C508B0B16C5A269E058A8F95 /* Pods_CoreDataStack_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7539C6975DD8D218FABCA04A /* Pods_CoreDataStack_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +48,11 @@
 		8EC33135E5629D1B2E1E2D05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		95B0A71EDF85A7124C72828A /* Pods-CoreDataStack_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataStack_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataStack_Tests/Pods-CoreDataStack_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9AA56B6FF911F9AD55A60A04 /* CoreData.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CoreData.podspec; path = ../CoreData.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AB33B4D12A12107300B23F45 /* Store 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Store 2.xcdatamodel"; sourceTree = "<group>"; };
 		AB476E9E2A0CA42F001D37CD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		AB4965382A15F8D100C8C760 /* ReactiveSwift+Cuncurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReactiveSwift+Cuncurrency.swift"; sourceTree = "<group>"; };
 		AB4C97C22A0A217400B58B98 /* Store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Store.xcdatamodel; sourceTree = "<group>"; };
+		ABD6CD7E2A1F495E00443666 /* sticker.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = sticker.webp; sourceTree = "<group>"; };
 		CEDC6249FCE181097FEA7D4F /* Pods-CoreDataStack_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataStack_Example.release.xcconfig"; path = "Target Support Files/Pods-CoreDataStack_Example/Pods-CoreDataStack_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FAB680F3F75BE2EB262E7623 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,9 +123,12 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				AB4965382A15F8D100C8C760 /* ReactiveSwift+Cuncurrency.swift */,
+				AB33B4C82A12103C00B23F45 /* Machien Models */,
 				AB4C97C12A0A217400B58B98 /* Store.xcdatamodeld */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				ABD6CD7E2A1F495E00443666 /* sticker.webp */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -162,6 +170,13 @@
 				8EC33135E5629D1B2E1E2D05 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		AB33B4C82A12103C00B23F45 /* Machien Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Machien Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				ABD6CD7F2A1F4AD800443666 /* sticker.webp in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -343,6 +359,7 @@
 			files = (
 				AB4C97C32A0A217400B58B98 /* Store.xcdatamodeld in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				AB4965392A15F8D100C8C760 /* ReactiveSwift+Cuncurrency.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +456,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -489,6 +507,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -617,9 +636,10 @@
 		AB4C97C12A0A217400B58B98 /* Store.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				AB33B4D12A12107300B23F45 /* Store 2.xcdatamodel */,
 				AB4C97C22A0A217400B58B98 /* Store.xcdatamodel */,
 			);
-			currentVersion = AB4C97C22A0A217400B58B98 /* Store.xcdatamodel */;
+			currentVersion = AB33B4D12A12107300B23F45 /* Store 2.xcdatamodel */;
 			path = Store.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
